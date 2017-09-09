@@ -1,3 +1,40 @@
-// Place all the styles related to the goats controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.board {
+
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.row:nth-child(even) {
+  .cell:nth-child(even) {
+    background-color: black;
+  }
+}
+
+.row:nth-child(odd) {
+  .cell:nth-child(odd) {
+    background-color: black;
+  }
+}
+
+.row {
+  height: 10%;
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  border: 1px solid black;
+}
+
+.column-label {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.label-row {
+  flex: 2;
+}
